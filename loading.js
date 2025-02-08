@@ -1,8 +1,3 @@
-
-
-/*-------------------------------------------------------------------------------------------*/
-
-// Simulación de carga
 window.addEventListener("load", () => {
   const loadingScreen = document.querySelector(".loading-screen");
 
@@ -16,12 +11,13 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     loadingScreen.style.display = "none"; // Ocultar el loading screen
 
-    // Redirigir a index.html
+    // Redirigir a home.html
     const targetPage = "home.html"; // Asegúrate de que esta ruta sea correcta
     if (targetPage) {
+      console.log(`Redirigiendo a ${targetPage}...`);
       window.location.href = targetPage;
     } else {
-      console.error("La ruta hacia index.html no está definida.");
+      console.error("La ruta hacia home.html no está definida.");
     }
-  }, 2000); // 3 segundos de espera simulada
+  }, 3000); // 3 segundos de espera simulada
 });
