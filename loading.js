@@ -17,11 +17,11 @@ window.addEventListener("load", () => {
     loadingScreen.style.display = "none"; // Ocultar el loading screen
 
     // Redirigir a index.html
-    const targetPage = "./home.html"; // Asegúrate de que esta ruta sea correcta
+    const targetPage = "home.html"; // Asegúrate de que esta ruta sea correcta
     if (targetPage) {
       window.location.href = targetPage;
     } else {
-      console.error("La ruta hacia home.html no está definida.");
+      console.error("La ruta hacia index.html no está definida.");
     }
   }, 2000); // 3 segundos de espera simulada
 });
