@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
     loadingScreen.style.display = "none"; // Ocultar el loading screen
 
     // Redirigir a index.html
-    const targetPage = "./index.html"; // Asegúrate de que esta ruta sea correcta
+    const targetPage = "./home.html"; // Asegúrate de que esta ruta sea correcta
     if (targetPage) {
       window.location.href = targetPage;
     } else {
