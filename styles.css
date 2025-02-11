@@ -66,7 +66,7 @@ body {
 .username-perfil {
   font-size: 1.3rem; /* Tamaño del texto */
   font-weight: bold; /* Texto en negrita */
-  color: white; /* Color blanco */
+  color: #FFFFFF; /* Color blanco */
   margin-top: 10px; /* Reducir el espacio superior para acercarlo a la imagen */
   margin-bottom: 5px; /* Espaciado inferior reducido */
 }
