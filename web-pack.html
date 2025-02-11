@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Profile Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="pack.css">
+</head>
+<body>
+  <div class="container">
+   <!-- Header -->
+<header class="profile-header">
+    <div class="banner"></div>
+    <div class="profile-picture">
+      <img src="images/perfil.jpg" alt="Profile Picture">
+      <div class="status-indicator online"></div> <!-- Indicador de estado -->
+    </div>
+    <div class="user-info">
+      <h1 class="name">DARIANNY<i class="fas fa-check-circle"></i></h1>
+    </div>
+  </header>
+  
+   <!-- Bio Section -->
+<section class="bio">
+    <p>
+      Modelo | Profesora | Influencer
+      <i class="fas fa-female"></i> <!-- Ícono para "Modelo" -->
+      <i class="fas fa-user-graduate"></i> <!-- Ícono para "Profesora" -->
+      <i class="fab fa-instagram"></i> <!-- Ícono para "Influencer" -->
+    </p>
+  </section>
+<!-- Subscription Section -->
+<section class="subscription">
+    <h1 class="subscription-title">REDES SOCIALES</h1>
+    <div class="subscription-box">
+      <!-- Íconos de Telegram y WhatsApp -->
+      <div class="social-icons">
+        <i class="fab fa-telegram social-icon"></i> <!-- Ícono de Telegram -->
+        <i class="fab fa-whatsapp social-icon"></i> <!-- Ícono de WhatsApp -->
+      </div>
+      <!-- Botón para abrir el modal de Suscripción -->
+      <button class="subscribe-btn" data-target="subscription-modal">
+        <span class="left-text">Suscríbete</span>
+        <span class="right-text">$10 Semanal</span>
+      </button>
+      <div class="locked-content">
+        <i class="fas fa-lock"></i> CHATEAR CON DARIANNY
+      </div>
+    </div>
+  </section>
+  
+ <!-- Modal para el botón Suscribirse -->
+<div class="modal" id="subscription-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="background-image"></div>
+        <div class="modal-profile-picture">
+          <img src="images/perfil.jpg" alt="Profile Picture">
+        </div>
+        <h1 class="username">DARIANNY<i class="fas fa-check-circle"></i></h1>
+        <p class="handle">@DARIANNY</p>
+      </div>
+      <div class="modal-body">
+        <h2>SUSCRIBETE Y CHATEA CON DARIANNY:</h2>
+        <ul class="benefits-list">
+          <li><i class="fas fa-check-circle"></i> Acceso exclusivo a todas las redes sociales</li>
+          <li><i class="fas fa-check-circle"></i> Descuentos en productos personalizados</li>
+          <li><i class="fas fa-check-circle"></i> Chatear todos los dias</li>
+        </ul>
+     <!-- Botón modificado como enlace a Telegram -->
+      <a href="https://t.me/TEMPTORIX?start=Estoy%20interesado%20en%20comprar%20la%20Suscripcion%20de%20Redes%20sociales%20$10%20Semanal" target="_blank" class="payment-btn">
+          <span class="left-text">Obtener Suscripción</span>
+          <span class="right-text">$10 Semanal</span>
+       </a>
+      </div>
+      <button class="close-btn" data-close>&times;</button>
+    </div>
+  </div>
+   <!-- Section of Packs: PACK BÁSICO -->
+<section class="section-of-packs">
+    <h1 class="pack-title">PACK BÁSICO</h1>
+    <div class="packs-box">
+      <div class="packs-icons">
+        <div class="icon-item">
+          <i class="fas fa-image"></i>
+          <span class="icon-count">15</span>
+        </div>
+        <div class="icon-item">
+          <i class="fas fa-video"></i>
+          <span class="icon-count">5</span>
+        </div>
+      </div>
+      <div class="packs-lock">
+        <i class="fas fa-lock"></i>
+      </div>
+      <!-- Botón para abrir el modal del PACK BÁSICO -->
+      <button class="packs-btn" data-target="basic-modal">OBTENER</button>
+    </div>
+  </section>
+  
+ <!-- Modal para PACK BÁSICO -->
+<div class="modal" id="basic-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="background-image"></div>
+        <div class="modal-profile-picture">
+          <img src="images/perfil.jpg" alt="Profile Picture">
+        </div>
+        <h1 class="username">DARIANNY<i class="fas fa-check-circle"></i></h1>
+        <p class="handle">@DARIANNY</p>
+      </div>
+      <div class="modal-body">
+        <h2>COMPRAR PACK BASICO:</h2>
+        <ul class="benefits-list">
+          <li><i class="fas fa-check-circle"></i> Acceso exclusivo a contenido basico</li>
+          <li><i class="fas fa-check-circle"></i>15 fotos y 5 videos</li>
+          <li><i class="fas fa-check-circle"></i>Pack permanente o Pack temporar</li>
+        </ul>
+       <!-- Botón "Pack Temporal $20" -->
+          <a href="https://t.me/TEMPTORIX?start=Estoy%20interesado%20en%20comprar%20el%20pack%20temporal%20de%20$20" target="_blank" class="payment-btn">
+              <span class="left-text">Pack Temporal</span>
+              <span class="right-text">$20</span>
+          </a>
+       <!-- Botón "Pack Permanente $30" -->
+           <a href="https://t.me/TEMPTORIX?start=Estoy%20interesado%20en%20comprar%20el%20pack%20permanente%20de%20$30" target="_blank" class="payment-btn">
+                <span class="left-text">Pack Permanente</span>
+              <span class="right-text">$30</span>
+            </a>
+      </div>
+      <button class="close-btn" data-close>&times;</button>
+    </div>
+  </div>
+  
+  <!-- Section of Packs: PACK MEDIUM -->
+  <section class="section-of-packs">
+    <h1 class="pack-title">PACK PLATINUM</h1>
+    <div class="packs-box">
+      <div class="packs-icons">
+        <div class="icon-item">
+          <i class="fas fa-image"></i>
+          <span class="icon-count">25</span>
+        </div>
+        <div class="icon-item">
+          <i class="fas fa-video"></i>
+          <span class="icon-count">10</span>
+        </div>
+      </div>
+      <div class="packs-lock">
+        <i class="fas fa-lock"></i>
+      </div>
+      <!-- Botón para abrir el modal del PACK MEDIUM -->
+      <button class="packs-btn" data-target="medium-modal">OBTENER</button>
+    </div>
+  </section>
+  
+ <!-- Modal para PACK MEDIUM -->
+<div class="modal" id="medium-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="background-image"></div>
+        <div class="modal-profile-picture">
+          <img src="images/perfil.jpg" alt="Profile Picture">
+        </div>
+        <h1 class="username">DARIANNY<i class="fas fa-check-circle"></i></h1>
+        <p class="handle">@DARIANNY</p>
+      </div>
+      <div class="modal-body">
+        <h2>COMPRAR PACK MEDIUM:</h2>
+        <ul class="benefits-list">
+            <li><i class="fas fa-check-circle"></i> Acceso exclusivo a contenido medium</li>
+            <li><i class="fas fa-check-circle"></i>25 fotos y 10 videos</li>
+            <li><i class="fas fa-check-circle"></i>Pack permanente o Pack temporar</li>
+          </ul>
+       <!-- Botón "Pack Temporal $45" -->
+          <a href="https://t.me/TEMPTORIX?start=Estoy%20interesado%20en%20comprar%20el%20pack%20temporal%20de%20$45" target="_blank" class="payment-btn">
+              <span class="left-text">Pack Temporal</span>
+              <span class="right-text">$45</span>
+           </a>
+  <!-- Botón "Pack Permanente $60" -->
+          <a href="https://t.me/TEMPTORIX?start=Estoy%20interesado%20en%20comprar%20el%20pack%20permanente%20de%20$60" target="_blank" class="payment-btn">
+                 <span class="left-text">Pack Permanente</span>
+                  <span class="right-text">$60</span>
+        </a>
+      </div>
+      <button class="close-btn" data-close>&times;</button>
+    </div>
+  </div>
+  <!-- Section of Packs: PACK PREMIUM -->
+<section class="section-of-packs">
+    <h1 class="pack-title">PACK VIP</h1>
+    <h3 class="pack-subtitle">PERSONALIZADO-EXCLUSIVO</h3>
+    <div class="packs-box">
+      <div class="packs-icons">
+        <div class="icon-item">
+          <i class="fas fa-image"></i>
+          <span class="icon-count">35</span>
+        </div>
+        <div class="icon-item">
+          <i class="fas fa-video"></i>
+          <span class="icon-count">18</span>
+        </div>
+      </div>
+      <div class="packs-lock">
+        <i class="fas fa-lock"></i>
+      </div>
+      <!-- Botón para abrir el modal del PACK PREMIUM -->
+      <button class="packs-btn" data-target="premium-modal">OBTENER</button>
+      <div class="locked-content">
+        <i class="fas fa-lock"></i> Nickname + Audio Caliente
+      </div>
+    </div>
+  </section>
+  
+ <!-- Modal para PACK PREMIUM -->
+<div class="modal" id="premium-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="background-image"></div>
+        <div class="modal-profile-picture">
+          <img src="images/perfil.jpg" alt="Profile Picture">
+        </div>
+        <h1 class="username">DARIANNY <i class="fas fa-check-circle"></i></h1>
+        <p class="handle">@DARIANNY</p>
+      </div>
+      <div class="modal-body">
+        <h2>COMPAR PACK VIP:</h2>
+        <ul class="benefits-list">
+          <li><i class="fas fa-check-circle"></i>Suscripción redes sociales un mes completo</li>
+          <li><i class="fas fa-check-circle"></i> Descuentos en productos personalizados</li>
+          <li><i class="fas fa-check-circle"></i> 1 Video totalmente personalizado con tu Nombre</li>
+          <li><i class="fas fa-check-circle"></i> Imagenes personalizadas</li>
+          <li><i class="fas fa-check-circle"></i>Descuentos del 30% en pack futuros</li>
+          <li><i class="fas fa-check-circle"></i>Contenido permanente</li>
+        </ul>
+       <!-- Botón "PACK VIP $100" -->
+       <a href="https://t.me/TEMPTORIX?start=Estoy%20interesado%20en%20Comprar%20el%20Pack%20Vip%20Personalizado%20de%20$100" target="_blank" class="payment-btn">
+          <span class="left-text">PACK VIP</span>
+          <span class="right-text">$100</span>
+        </a>
+      </div>
+      <button class="close-btn" data-close>&times;</button>
+    </div>
+  </div>
+  <script src="pack.js"></script>
+</body>
+</html>

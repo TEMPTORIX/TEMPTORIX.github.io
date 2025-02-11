@@ -1,0 +1,393 @@
+
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* Header */
+    .profile-header {
+      position: relative;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .banner {
+      width: 100%;
+      height: 200px;
+      background: url('images/portada.jpg') no-repeat center center/cover;
+      border-radius: 15px;
+    }
+    .profile-picture {
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .profile-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    
+    
+    /* User Info */
+    .user-info {
+      margin-top: 120px; /* Aumentamos el margen superior para separarlo de la imagen de perfil */
+      text-align: center;
+    }
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+    .name i {
+      color: #007bff;
+      font-size: 20px;
+    }
+    .username {
+      font-size: 16px;
+      color: #666;
+    }
+    .status {
+      font-size: 14px;
+      padding: 3px 8px;
+      border-radius: 10px;
+      margin-left: 10px;
+    }
+    .status.online {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    /* Bio Section */
+    .bio {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .bio p {
+      font-size: 18px;
+      color: #555;
+    }
+    .bio i {
+      margin: 0 5px; /* Espaciado entre los íconos */
+      color: #000; /* Color negro para los íconos */
+      font-size: 20px; /* Tamaño de los íconos */
+    }
+    /* Subscription Section */
+    .subscription {
+      margin-top: 20px; /* Espaciado superior para separarlo de la sección Bio */
+      padding-top: 20px; /* Espaciado interno superior */
+      border-top: 1px solid #ddd; /* Línea separadora */
+    }
+
+    /* Estilos para el título "REDES SOCIALES" */
+.subscription-title {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado inferior para separarlo del contenido siguiente */
+  }
+    .subscription-box {
+      background-color: #fff; /* Fondo blanco para el cuadro */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+      padding: 20px; /* Espaciado interno */
+      max-width: 500px; /* Ancho máximo reducido */
+      margin: 0 auto; /* Centrado horizontal */
+      text-align: center; /* Alineación centrada */
+    }
+
+  /* Estilos para los íconos sociales */
+.social-icons {
+    display: flex; /* Alineación horizontal de los íconos */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    align-items: center; /* Alineación vertical */
+    gap: 15px; /* Espaciado entre los íconos */
+    margin-bottom: 20px; /* Espaciado inferior para separarlos del botón */
+  }
+  
+  .social-icon {
+    font-size: 24px; /* Tamaño de los íconos */
+    color: #0088cc; /* Color azul para Telegram */
+    transition: transform 0.3s ease; /* Efecto de escala al pasar el ratón */
+  }
+  
+  .social-icon.fa-whatsapp {
+    color: #25d366; /* Color verde para WhatsApp */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el ratón */
+  }
+    .subscribe-btn {
+      background-color: #007bff; /* Color de fondo azul */
+      color: #fff; /* Texto blanco */
+      font-size: 16px;
+      padding: 10px 20px; /* Espaciado interno */
+      border: none; /* Sin borde */
+      border-radius: 25px; /* Bordes redondeados */
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Transición suave */
+      display: flex; /* Diseño flexible para dividir el texto */
+      justify-content: space-between; /* Espacio entre los textos */
+      align-items: center; /* Alineación vertical */
+      width: 100%; /* Ocupa todo el ancho disponible */
+    }
+    .subscribe-btn:hover {
+      background-color: #0056b3; /* Cambio de color al pasar el ratón */
+    }
+    .subscribe-btn .left-text {
+      font-weight: bold; /* Texto en negrita */
+    }
+    .subscribe-btn .right-text {
+      font-size: 14px; /* Tamaño de fuente más pequeño */
+      color: #f8f9fa; /* Color blanco */
+    }
+    .locked-content {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #888;
+    }
+    .locked-content i {
+      margin-right: 5px;
+    }
+    /* Section of Packs */
+    .section-of-packs {
+      margin-top: 20px; /* Espaciado superior */
+      padding-top: 20px; /* Espaciado interno superior */
+      border-top: 1px solid #ddd; /* Línea separadora */
+      text-align: center; /* Alineación centrada para el título */
+    }
+    .pack-title {
+      font-size: 24px; /* Tamaño del título */
+      font-weight: bold; /* Texto en negrita */
+      color: #333; /* Color del texto */
+      margin-bottom: 15px; /* Espaciado inferior */
+    }
+    .packs-box {
+      background-color: #fff; /* Fondo blanco */
+      border-radius: 10px; /* Bordes redondeados */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+      padding: 20px; /* Espaciado interno */
+      max-width: 500px; /* Ancho máximo igual al Subscription Section */
+      margin: 0 auto; /* Centrado horizontal */
+      position: relative; /* Para posicionar elementos internos */
+      text-align: center; /* Alineación centrada para todos los elementos */
+    }
+
+    /* Estilos para el subtítulo del pack */
+.pack-subtitle {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #007bff; /* Color azul para destacar */
+    margin-top: -10px; /* Ajuste para acercarlo al título */
+    margin-bottom: 20px; /* Espaciado inferior para separarlo del contenido siguiente */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras para un diseño más elegante */
+  }
+    .packs-icons {
+      display: flex; /* Alineación horizontal de los íconos */
+      align-items: center; /* Alineación vertical */
+      gap: 15px; /* Espaciado entre los íconos */
+      margin-bottom: 15px; /* Espaciado inferior */
+    }
+    .icon-item {
+      display: flex; /* Alineación horizontal del ícono y el número */
+      align-items: center; /* Alineación vertical */
+      gap: 5px; /* Espaciado entre el ícono y el número */
+    }
+    .icon-item i {
+      font-size: 16px; /* Tamaño reducido de los íconos */
+      color: #000; /* Color negro */
+    }
+    .icon-item .icon-count {
+      font-size: 14px; /* Tamaño del número */
+      color: #333; /* Color del texto */
+    }
+    .packs-lock {
+      position: absolute; /* Posicionamiento absoluto */
+      top: 20px; /* Distancia desde la parte superior */
+      right: 20px; /* Distancia desde la derecha */
+    }
+    .packs-lock i {
+      font-size: 16px; /* Tamaño del ícono de candado */
+      color: #000; /* Color negro */
+    }
+    /* Estilos para el nuevo botón packs-btn */
+    .packs-btn {
+      background-color: #007bff; /* Color de fondo azul */
+      color: #fff; /* Texto blanco */
+      font-size: 16px;
+      padding: 10px 20px; /* Espaciado interno */
+      border: none; /* Sin borde */
+      border-radius: 25px; /* Bordes redondeados */
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Transición suave */
+      width: 100%; /* Ocupa todo el ancho disponible */
+      text-align: center; /* Texto centrado */
+      font-weight: bold; /* Texto en negrita */
+    }
+    .packs-btn:hover {
+      background-color: #0056b3; /* Cambio de color al pasar el ratón */
+    }
+    /* Modal */
+    .modal {
+      display: none; /* Oculto por defecto */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background-color: #fff;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+    }
+    /* Encabezado del Modal */
+    .modal-header {
+      position: relative;
+    }
+    .background-image {
+      width: 100%;
+      height: 150px;
+      background: url('images/portada.jpg') no-repeat center center/cover; /* Nueva imagen de portada */
+    }
+    /* Clase específica para la imagen de perfil del modal */
+    .modal-profile-picture {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .modal-profile-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Asegura que la imagen de perfil se ajuste correctamente */
+    }
+    .username {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 60px;
+    }
+    .username i {
+      color: #007bff;
+      font-size: 18px;
+    }
+    .handle {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 15px;
+    }
+    /* Contenido del Modal */
+    .modal-body h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    /* Estilos para la lista de beneficios */
+    .benefits-list {
+      list-style: none; /* Sin viñetas */
+      padding: 0; /* Sin relleno predeterminado */
+      margin: 0 0 20px 40px; /* Margen inferior y margen izquierdo para moverlo hacia la derecha */
+    }
+    .benefits-list li {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .benefits-list i {
+      color: #007bff;
+      font-size: 16px;
+    }
+    /* Añadir margen entre los botones */
+    .payment-btn + .payment-btn {
+      margin-top: 15px; /* Espacio entre los botones */
+    }
+    /* Estilos para el botón de pago */
+    .payment-btn {
+      background-color: #007bff; /* Color de fondo azul */
+      color: #fff; /* Texto blanco */
+      font-size: 16px;
+      padding: 10px 20px; /* Espaciado interno igual al .subscribe-btn */
+      border: none; /* Sin borde */
+      border-radius: 25px; /* Bordes redondeados */
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Transición suave */
+      display: flex; /* Diseño flexible */
+      justify-content: space-between; /* Espacio entre los textos */
+      align-items: center; /* Alineación vertical */
+      width: 90%; /* Ocupa todo el ancho disponible (igual que .subscribe-btn) */
+      max-width: 400px; /* Ancho máximo para evitar colisiones */
+      margin: 20px auto 20px; /* Margen superior e inferior para separarlo */
+    }
+    .payment-btn:hover {
+      background-color: #0056b3; /* Cambio de color al pasar el ratón */
+    }
+    .payment-btn .left-text {
+      font-weight: bold; /* Texto en negrita */
+    }
+    .payment-btn .right-text {
+      font-size: 14px; /* Tamaño de fuente más pequeño */
+      color: #f8f9fa; /* Color blanco */
+    }
+    /* Botón de Cierre */
+    .close-btn {
+      background: none; /* Sin fondo */
+      color: #fff; /* Color blanco para el ícono */
+      font-size: 24px; /* Tamaño del ícono */
+      border: none; /* Sin borde */
+      cursor: pointer;
+      position: absolute; /* Posicionamiento absoluto */
+      top: 10px; /* Distancia desde la parte superior */
+      right: 10px; /* Distancia desde la derecha */
+      padding: 5px; /* Espaciado interno */
+      border-radius: 50%; /* Forma circular */
+      transition: background-color 0.3s ease; /* Transición suave */
+    }
+    .close-btn:hover {
+      background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente al pasar el ratón */
+    }
+    .close-btn i {
+      pointer-events: none; /* Evita que el ícono sea clickeable directamente */
+    }
+ 
