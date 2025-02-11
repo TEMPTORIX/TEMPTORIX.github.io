@@ -64,7 +64,7 @@ body {
 }
 /* Estilos para el nombre de usuario */
 .username-perfil {
-  font-size: 1.2rem; /* Tamaño del texto */
+  font-size: 1.1rem; /* Tamaño del texto */
   font-weight: bold; /* Texto en negrita */
   color: #FFFFFF; /* Color blanco */
   margin-top: 10px; /* Reducir el espacio superior para acercarlo a la imagen */
