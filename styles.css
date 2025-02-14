@@ -123,9 +123,12 @@ body {
   background-color: #0088cc; /* Color oficial de Telegram */
 }
 
-.whatsapp-button {
-  background-color: #25d366; /* Color oficial de WhatsApp */
+/* Estilo específico para el botón de Instagram */
+.instagram-button {
+  background-color: #E1306C; /* Color oficial de Instagram */
 }
+
+
 
 /* Animación para el botón onlyfans-button */
 @keyframes moveLeftRight {
